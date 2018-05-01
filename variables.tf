@@ -150,3 +150,9 @@ variable region_params {
     }
   }
 }
+
+variable ssh_source_ranges {
+  description = "Network ranges to allow SSH from"
+  type        = "list"
+  default     = ["0.0.0.0/0"]
+}
